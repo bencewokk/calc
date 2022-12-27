@@ -62,45 +62,4 @@ zero=Button(image=nullas, bg="black", borderwidth=0,highlightthickness="10").gri
 pont=Button(image=dot, bg="black", borderwidth=0,highlightthickness="10").grid(row=7, column=2, pady=0)
 egyen=Button(image=equal, bg="black", borderwidth=0,highlightthickness="10").grid(row=7, column=3 , pady=0)
 
-szamok=[320,32]
-cmnds=["/"]
-szamokhossz=len(szamok)
-szamh=1
-y=0
-while 0==0:
-    print(szamok)
-    if cmnds[y]=="-":
-        szam1=szamok[0]
-        szam2=szamok[szamh]
-
-        eredmeny=szam1-szam2
-        szamok[0]=eredmeny
-
-    elif cmnds[y] == "/":
-        szam1 = szamok[0]
-        szam2 = szamok[szamh]
-
-        eredmeny = szam1/szam2
-        szamok[0] = eredmeny
-
-    elif cmnds[y] == "x":
-        szam1 = szamok[0]
-        szam2 = szamok[szamh]
-
-        eredmeny = szam1*szam2
-        szamok[0] = eredmeny
-
-    elif cmnds[y] == "+":
-        szam1 = szamok[0]
-        szam2 = szamok[szamh]
-
-        eredmeny = szam1+szam2
-        szamok[0] = eredmeny
-    szamh+=1
-    if y==len(cmnds)-1:
-        break
-    print(y)
-    y+=1
-
-
 root.mainloop()
